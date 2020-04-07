@@ -1,4 +1,13 @@
 import math
-
+z = 0
 y = 3 + 3
 print(y)
+def function1():
+    y = 3 + 3
+    print(y)
+def function2():
+    global z
+    z = math.cos(60)
+function1()
+function2()
+print(z)
